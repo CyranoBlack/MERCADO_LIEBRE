@@ -1,3 +1,6 @@
+@import "register.css";
+@import "login.css";
+
 * {
     margin: 0;
     padding: 0px;
@@ -98,6 +101,7 @@ main {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+    width: 90%;
 }
 
 .productos h2 {
@@ -136,6 +140,11 @@ main {
     right: 20px;
     top: -15px;
     color: #39b54a;
+    transition: transform 0.3s ease-in-out ;
+}
+
+.desc-product i:hover {
+    transform: rotate(-90deg);
 }
 
 .off {
@@ -269,19 +278,22 @@ footer .cr {
         display: flex;
         padding: 15px;
         height: 80px;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
         width: 100%;
     }
 
     .logo {
-        width: none;
+        width: 30%;
         max-height: 80px;
     }
 
     .search-bar {
+        width: 30%;
+    }
 
-        width: none;
+    .header-top-top p {
+        width: 30%;
     }
 
     .listas {

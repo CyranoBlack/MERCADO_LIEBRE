@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 const path = require("path");
-const port = 3050;
+const port = 3030;
 
 app.use(express.static('public'))
 
@@ -12,3 +12,10 @@ app.get("/", (req, res) => {
 
 app.listen(port,()=>{console.log(`http://localhost:${port}`)})
 
+app.get('/registro', (req, res) => {
+  res.sendFile(path.join(__dirname, '/views/register.html'))
+})
+
+app.get('/ingresar', (req, res) => {
+  res.sendFile(path.join(__dirname, '/views/login.html'))
+})
