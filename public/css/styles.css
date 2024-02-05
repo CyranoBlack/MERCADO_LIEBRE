@@ -1,5 +1,4 @@
 @import "register.css";
-@import "login.css";
 
 * {
     margin: 0;
@@ -260,7 +259,7 @@ footer .cr {
         width: 47.5%;
     }
 
-    .productos article {
+    .productos article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
 }
@@ -278,22 +277,19 @@ footer .cr {
         display: flex;
         padding: 15px;
         height: 80px;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 100%;
     }
 
     .logo {
-        width: 30%;
+        width: none;
         max-height: 80px;
     }
 
     .search-bar {
-        width: 30%;
-    }
 
-    .header-top-top p {
-        width: 30%;
+        width: none;
     }
 
     .listas {
@@ -313,9 +309,31 @@ footer .cr {
 
     .productos article {
         width: 21vw;
+        margin-bottom: 30px; 
     }
 
-    .productos article {
+    .productos article:hover {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+
+    .product-name {
+        display: none;
+    }
+
+    .productos article:hover .product-name {
+        display: flex;
+    }
+
+
+    footer {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30pxq;
+    }
+
+    footer .cr {
+        width: 100%;
+    }
+
 }
